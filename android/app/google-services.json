@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916683131497",
+    "project_id": "solverside-6dd9e",
+    "storage_bucket": "solverside-6dd9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916683131497:android:e314e9841f26a7d99e70f8",
+        "android_client_info": {
+          "package_name": "com.example.assignment_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1ubL-sWVnerWITtN9yDSxxGAJukiEILk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
