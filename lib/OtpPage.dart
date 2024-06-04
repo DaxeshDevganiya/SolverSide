@@ -30,7 +30,7 @@ class _OtpState extends State<Otp> {
 
     final contact = await prefs.getString("contact").toString();
     final fcmToken = await prefs.getString("fcmToken").toString();
-
+    print("tokenotp" + fcmToken);
     var response = await http.post(Uri.parse(apiUrl),
         headers: {"Content-Type": "application/json"},
         body: jsonEncode({

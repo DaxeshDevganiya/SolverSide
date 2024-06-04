@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:assignment_system/domain.dart';
 import 'package:assignment_system/pages/solver/solverDashboard.dart';
-import 'package:assignment_system/pages/student/StudentDashboard.dart';
+
 import 'package:flutter/material.dart';
 import 'package:assignment_system/main.dart';
 import 'package:http/http.dart' as http;
@@ -41,10 +41,10 @@ class _LoginState extends State<Login> {
       await prefs.setString("userId", responseData['Data']["_id"]);
       if (role == "student") {
         print("if");
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => DashBoard()),
-        );
+        // Navigator.pushReplacement(
+        //   context,
+        //   MaterialPageRoute(builder: (context) => DashBoard()),
+        // );
       } else {
         print("else");
         Navigator.pushReplacement(

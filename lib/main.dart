@@ -64,6 +64,8 @@ class _SplashScreenState extends State<SplashScreen> {
     final token = await _fcm.toString();
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setString("fcmToken", token.toString());
+    final nwq = await prefs.getString("fcmToken");
+    print(nwq);
     checkAuthentication();
     super.initState();
     FirebaseMessaging.instance.getInitialMessage().then(

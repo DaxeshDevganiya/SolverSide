@@ -3,9 +3,7 @@ import 'dart:convert';
 import 'package:assignment_system/pages/solver/AccpetedAssignment.dart';
 import 'package:assignment_system/pages/solver/PostSolverAssignment.dart';
 import 'package:assignment_system/pages/solver/solverHomepage.dart';
-import 'package:assignment_system/pages/student/Account.dart';
-import 'package:assignment_system/pages/student/Homepage.dart';
-import 'package:assignment_system/pages/student/PostAssignment.dart';
+
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +23,7 @@ class _SolverDashBoardState extends State<SolverDashBoard> {
   final List<Widget> screens = [
     SolverHomePage(),
     SolverPostAssignment(),
-    Account(),
+    // Account(),
   ];
   @override
   Widget build(BuildContext context) {

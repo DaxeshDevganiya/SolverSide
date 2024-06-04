@@ -8,6 +8,7 @@ import 'package:assignment_system/pages/solver/AccpetedAssignment.dart';
 import 'package:assignment_system/pages/solver/DoneAssignment.dart';
 import 'package:assignment_system/pages/solver/SolverHomepage.dart';
 import 'package:assignment_system/pages/solver/PostSolverAssignment.dart';
+import 'package:assignment_system/pages/solver/setting.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -138,6 +139,17 @@ class _NavBarState extends State<NavBar> {
                 context,
                 MaterialPageRoute(builder: (context) => ChangePasswod()),
               );
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text('Settings'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => Setting()),
+              );
+              // Navigator.pop(context);
             },
           ),
           ListTile(
